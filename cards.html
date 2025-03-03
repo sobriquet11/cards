@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Cards with Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="content-wrapper">
+      <div class="card-container">
+        <div class="card" id="card1">
+            <div class="front">
+                <h1>Card 1</h1>
+            </div>
+            <div class="back">
+                <h1>Full Screen Content</h1>
+                <p>This is the content for Card 1.</p>
+                <button class="closeButton">Close</button>
+            </div>
+        </div>
+        
+        <!-- Left Button Container (for Back and Next) -->
+        <div class="button-container left">
+            <button id="backButton" disabled>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button id="nextButton">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+    
+        <!-- Right Button Container (for Eye button) -->
+        <div class="button-container right">
+            <button id="eyeButton">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="script-cards.js"></script>
+</body>
+</html>
